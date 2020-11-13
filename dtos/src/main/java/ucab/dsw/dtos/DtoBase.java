@@ -1,5 +1,8 @@
 package ucab.dsw.dtos;
 
+
+import ucab.dsw.excepciones.PruebaExcepcion;
+
 public class DtoBase
 {
     private long _id;
@@ -19,7 +22,7 @@ public class DtoBase
         return _id;
     }
 
-    public void setId( long id ) throws Exception
+    public void setId( long id ) throws PruebaExcepcion
     {
         if ( id >= 0 )
         {
@@ -27,7 +30,7 @@ public class DtoBase
         }
         else
         {
-            throw new Exception( Long.toString( _id ) );
+            throw new PruebaExcepcion( );
         }
     }
 }

@@ -48,6 +48,18 @@ public class UsuarioDto extends DtoBase
     private String correoelectronico;
     private TipoUsuarioDto tipoUsuarioDto;
 
+    public String getContrasena()
+    {
+        return contrasena;
+    }
+
+    public void setContrasena( String contrasena )
+    {
+        this.contrasena = contrasena;
+    }
+
+    private String contrasena;
+
     public String getEstatus()
     {
         return estatus;
